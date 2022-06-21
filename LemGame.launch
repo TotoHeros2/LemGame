@@ -19,7 +19,7 @@
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="com.gwtplugins.gwt.eclipse.core.moduleClasspathProvider"/>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.google.gwt.dev.DevMode"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-remoteUI &quot;${gwt_remote_ui_server_port}:${unique_id}&quot; -startupUrl LemGame.html -logLevel INFO -codeServerPort 9997 -port 8888 -war C:\workspace-test\LemGame\war lem.LemGame"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-remoteUI &quot;${gwt_remote_ui_server_port}:${unique_id}&quot; -startupUrl LemGame.html -logLevel INFO -codeServerPort 9997 -port 8888 -war C:\soft\eclipse201903\toGit\LemGame\war lem.LemGame"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="LemGame"/>
 <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Xmx1g"/>
 </launchConfiguration>
