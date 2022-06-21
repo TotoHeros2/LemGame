@@ -1,0 +1,160 @@
+<!doctype html>
+<!-- The DOCTYPE declaration above will set the     -->
+<!-- browser's rendering engine into                -->
+<!-- "Standards Mode". Replacing this declaration   -->
+<!-- with a "Quirks Mode" doctype is not supported. -->
+
+<html>
+  <head>
+   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta name="description" content="Simulation d'alunissage avec Lem">
+<meta name="keywords" content="simulation,lem,lune,alunissage,armstrong,aldrin,pilote,jeu,game">
+<title>
+Pilotez l'alunissage du Lem.
+</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <!--                                                               -->
+    <!-- Consider inlining CSS to reduce the number of requested files -->
+    <!--                                                               -->
+    <link type="text/css" rel="stylesheet" href="LemGame.css">
+
+    <!--                                           -->
+    <!-- Any title is fine                         -->
+    <!--                                           -->
+    
+    <!--                                           -->
+    <!-- This script loads your compiled module.   -->
+    <!-- If you add any GWT meta tags, they must   -->
+    <!-- be added before this line.                -->
+    <!--                                           -->
+    <script type="text/javascript" language="javascript" src="lemgame/lemgame.nocache.js"></script>
+  </head>
+
+  <!--                                           -->
+  <!-- The body can have arbitrary html, or      -->
+  <!-- you can leave the body empty if you want  -->
+  <!-- to create a completely dynamic UI.        -->
+  <!--                                           -->
+  <body>
+
+    <!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+    <noscript>
+      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Your web browser must have JavaScript enabled
+        in order for this application to display correctly.
+      </div>
+    </noscript>
+    
+    
+    <html>
+
+<body>
+<h1 align="left">Dans la peau d'Armstrong et Aldrin.</h1>
+
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width = "800px">
+
+    <table>
+    	<tr>
+    		<td width = "150px">
+    			<table>
+        				<tr>
+    					<td>
+    						<hr>
+	    						<b>Paramètres de vol : </b>
+    					</td>
+    				</tr>  			
+    				<tr>
+    					<td>
+    						Altitude [m] : <span id="altitude"> </span>
+    					</td>
+    				</tr>
+    				<tr>
+    					<td>
+    						V horiz. [m/s] : <span id="vx"> </span>
+    					</td>
+    				</tr>
+    				<tr>
+    					<td>
+    						V vert. [m/s] : <span id="vy"> </span>
+    					</td>
+    				</tr>
+    				<tr>
+    					<td>
+    						Carburant [kg] : <span id="carburant"> </span>
+    					</td>
+    				</tr>
+    				<tr>
+    					<td>
+    						Temps [s] : <span id="temps"> </span>
+    					</td>
+    				</tr>
+      				<tr>
+    					<td>
+    						<hr>
+	    						<b>Commandes : </b>
+    					</td>
+    				</tr>
+      				<tr>
+    					<td>
+    									Poussée [%] : <span id="massePourcentageValue"> </span>
+    					
+  				<input id="sliderMassePourcentage" type="range"  min="0" max="100" step="1"></input>
+    					</td>
+    				</tr>  	
+        			<tr>
+    					<td>
+    									Angle [deg] : <span id="angleValue"></span>
+    					
+				<input id="sliderAngle" type="range"  min="-90" max="90" step="1"></input>
+    					</td>
+    				</tr>    				
+          			<tr>
+    					<td>
+    					
+							<button id="stopButton"/>
+    					</td>
+    				</tr>   							  				
+    			</table>
+    		</td>
+    		<td>
+    			<span id="canvas"></span>
+    		</td>
+
+    	</tr>
+	
+    </table>
+	</td>
+	<td width="20"></td>
+    <td align="left" valign="top"><p>Vous êtes à 15 km de la surface de la lune et vous foncez à 1700 m/s.</br>
+        Essayer d'arriver à la surface verticalement et avec la plus petite vitesse possible. </br>
+        Pour cela vous avez une fusée dont la poussée maximum est de 4.5 tonnes (45kN) et dont la consommation à ce régime est de 16 kg/s. </br>
+        Vous pouvez contrôler l'angle de la poussée en inclinant le lem.</br>
+        La fléche rouge représente votre vecteur vitesse.</br>
+    Pour r&eacute;ussir, votre vitesse horizontale et verticale ne doit pas d&eacute;passer 5 et 10 m/s et l'angle du lem doit &ecirc;tre inf&eacute;rieur &agrave; 3 degr&eacute;s.</br>
+	Pour utiliser les fléches (haut/bas) pour la poussée et (gauche/droite) pour l'inclinaison, il faut s'assurer d'avoir le focus sur l'image. 
+      <p>	      <strong>Bonne chance.</strong></br>
+        </p>
+      <p>Pierre ( <b>pgilquin</b>( at )<b>citycable</b>( . )<b>ch</b>  )
+      </p>
+      </td>
+  </tr>
+</table>
+
+<p><br/>
+  Voici la courbe optimum trouvée chez Wikipédia :
+</p>
+<p><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Atterrissage-LEM.png/800px-Atterrissage-LEM.png"></p>
+</body>
+</html>
+    
+    
+
+
+
+  </body>
+</html>

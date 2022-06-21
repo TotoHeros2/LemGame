@@ -1,0 +1,144 @@
+<!doctype html>
+<!-- The DOCTYPE declaration above will set the     -->
+<!-- browser's rendering engine into                -->
+<!-- "Standards Mode". Replacing this declaration   -->
+<!-- with a "Quirks Mode" doctype is not supported. -->
+
+<html>
+  <head>
+   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta name="description" content="Simulation d'alunissage avec Lem">
+<meta name="keywords" content="simulation,lem,lune,alunissage,armstrong,aldrin,pilote,jeu,game">
+<title>
+De la Terre à la Lune.
+</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <!--                                                               -->
+    <!-- Consider inlining CSS to reduce the number of requested files -->
+    <!--                                                               -->
+    <link type="text/css" rel="stylesheet" href="LemGame.css">
+
+    <!--                                           -->
+    <!-- Any title is fine                         -->
+    <!--                                           -->
+    
+    <!--                                           -->
+    <!-- This script loads your compiled module.   -->
+    <!-- If you add any GWT meta tags, they must   -->
+    <!-- be added before this line.                -->
+    <!--                                           -->
+    <script type="text/javascript" language="javascript" src="apollogame/apollogame.nocache.js"></script>
+  </head>
+
+  <!--                                           -->
+  <!-- The body can have arbitrary html, or      -->
+  <!-- you can leave the body empty if you want  -->
+  <!-- to create a completely dynamic UI.        -->
+  <!--                                           -->
+  <body>
+
+    <!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+    <noscript>
+      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Your web browser must have JavaScript enabled
+        in order for this application to display correctly.
+      </div>
+    </noscript>
+    
+    
+    <html>
+
+<body>
+<h1 align="left">De la Terre à la Lune</h1>
+
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width = "800px">
+
+    <table>
+    	<tr>
+    		<td width = "220px">
+    			<table>
+        				<tr>
+    					<td>
+    						<hr>
+	    						<b>Paramètres de vol : </b>
+    					</td>
+    				</tr>  			
+    				<tr>
+    					<td>
+    						Distance Lune [km] : <span id="distanceLune"> </span>
+    					</td>
+    				</tr>
+    				<tr>
+    					<td>
+    						Distance Terre [km] : <span id="distanceTerre"> </span>
+    					</td>
+    				</tr>
+    				<tr>
+    					<td>
+    						V [m/s] : <span id="v"> </span>
+    					</td>
+    				</tr>
+    				<tr>
+    					<td>
+    						Carburant [kg] : <span id="carburant"> </span>
+    					</td>
+    				</tr>
+    				<tr>
+    					<td>
+    						Temps [s] : <span id="temps"> </span>
+    					</td>
+    				</tr>
+    				<tr>
+    					<td>
+    									coeff. t simulé/ t réel : <span id="accelerationTempsLabel"></span>
+										<input id="sliderAccelerationTemps" type="range"  min="1" max="50" step="1"></input>
+    					</td>
+    				</tr>
+      				<tr>
+    					<td>
+    						<hr>
+	    						<b>Commandes : </b>
+    					</td>
+    				</tr>
+      				<tr>
+    					<td>
+    									Moteur CSM : <button id="stopButton"/> </span>
+    					
+    					</td>
+    				</tr>  	
+        			<tr>
+    					<td>
+    									Angle [deg] : <span id="angleValue"></span>
+    					
+    					</td>
+    		    	</tr>  	
+        			<tr>
+    					   <td>    					
+										<input id="sliderAngle" type="range"  min="0" max="359" step="1"></input>
+    					</td>
+    				</tr>    				
+    			</table>
+    		</td>
+    		<td>
+    			<span id="canvas"></span>
+    		</td>
+
+    	</tr>
+	
+    </table>
+	</td>
+  </tr>
+</body>
+</html>
+    
+    
+
+
+
+  </body>
+</html>
